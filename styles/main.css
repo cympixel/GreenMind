@@ -708,6 +708,7 @@ h2 {
 
 .swiper-slide {
   width: auto !important;
+  height: auto !important;
 }
 @media (width <= 63.99875rem) {
   .swiper-slide {
@@ -763,6 +764,7 @@ h2 {
   padding: 3rem 3rem 0 3rem;
   border-radius: 0.75rem;
   display: grid;
+  height: 100%;
 }
 .reviews__slider-card p {
   color: var(--color-medium);
@@ -788,6 +790,7 @@ h2 {
   align-items: center;
 }
 .reviews__slider-card-person {
+  margin-top: auto;
   display: flex;
   gap: 0.4375rem;
   align-items: center;

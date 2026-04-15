@@ -23,12 +23,15 @@
     &__slider{
         overflow-x: hidden;
         padding-inline: rem(15);
+
+        
         &-card{
             width: rem(800);
             background-color: var(--color-bg-main);
             padding: rem(48) rem(48) 0 rem(48);
             border-radius: rem(12);
             display: grid;
+            height: 100%;
 
             p{
                 color: var(--color-medium);
@@ -54,6 +57,7 @@
                 align-items: center;
             }
             &-person{
+                margin-top: auto;
                 display: flex;
                 gap: rem(7);
                 align-items: center;
