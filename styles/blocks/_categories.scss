@@ -1,0 +1,101 @@
+@use '../helpers' as *;
+
+.categories{
+    &__inner{
+        text-align: center;
+        display: grid;
+        gap: fluid(96,36);
+
+    }
+    &__title{
+        display: grid;
+        gap: rem(12);
+    }
+    &__sections{
+        position: relative;
+        background-color: var(--color-bg-main);
+        
+        &-inner{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: rem(96);
+            padding-block: rem(45) rem(197);  
+
+            @include tablet{
+                gap: rem(60);
+                padding-block: rem(30) rem(70);  
+            }
+            @include mobile{
+                padding-block: rem(30) rem(30);    
+                grid-template-columns: auto;
+            }
+
+        }
+
+        
+    }
+
+    &__section{
+        display: grid;
+        gap: rem(12);
+        transform: translateY(-96px);
+        transition-duration: var(--transition-duration);
+
+        @include tablet{
+            transform: translateY(0);
+
+            img{
+                width: 100%;
+            }
+        }
+        
+        &-info{
+            display: grid;
+            gap: rem(24);
+            opacity: 0;
+            visibility: hidden;
+
+            @include tablet{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        @include tablet-above{
+            &:hover{
+                transform: translateY(96px);
+                .categories__section-info{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            &--active{
+                transform: translateY(96px);
+                .categories__section-info{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        
+        
+
+        img{
+            border-radius: rem(12);
+        }
+    }
+    &__btn{
+        justify-self: center;
+        padding: rem(12) rem(24);
+        display: flex;
+        gap: rem(10);
+        background-color: #fff;
+        color: var(--color-accent);
+        font-weight: 500;
+        border-radius: rem(8);
+
+        &:hover{
+            background-color: #e6e5e5;
+        }
+    }
+}

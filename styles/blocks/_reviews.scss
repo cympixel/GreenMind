@@ -1,0 +1,78 @@
+@use '../helpers' as *;
+
+.reviews{
+    
+    padding-block: rem(96) rem(230);
+
+    @include tablet{
+        padding-block: rem(60) rem(130);
+    }
+    &__inner{
+        display: grid;
+        gap: rem(48);
+    }
+    &__title{
+        display: flex;
+        justify-content: space-between;      
+        width: 100%;
+        position: relative;
+        h2{
+            max-width: rem(467);
+        }
+    }
+    &__slider{
+        overflow-x: hidden;
+        padding-inline: rem(15);
+        &-card{
+            width: rem(800);
+            background-color: var(--color-bg-main);
+            padding: rem(48) rem(48) 0 rem(48);
+            border-radius: rem(12);
+            display: grid;
+
+            p{
+                color: var(--color-medium);
+            }
+
+            @include tablet{
+                width: 100%;
+                padding: rem(24) rem(24) 0 rem(24);
+            }
+
+            @include mobile{
+                gap: rem(12);
+                padding: rem(24) rem(24) rem(24) rem(24);
+                
+                &-img{
+                    display: none;
+                }
+            }
+
+            &-bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &-person{
+                display: flex;
+                gap: rem(7);
+                align-items: center;
+            }
+            &-name{
+                display: grid;
+
+                span{
+                    font-size: fluid(12, 8);
+                }
+            }
+            &-rating{
+                color: var(--color-accent);
+                font-weight: 700;
+
+                display: flex;
+                gap: rem(12);
+            }
+        }
+    }
+    
+}

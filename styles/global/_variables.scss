@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+:root{
+    
+
+    --font-family-base:"Poppins", sans-serif;
+
+    --container-width:#{rem(1248)};
+    --container-padding-x:#{rem(16)};
+
+    --color-bg-main: #c1dcdc;
+	--color-main: rgba(30, 30, 30, 0.5);
+	--color-accent: #1e1e1e;
+	--color-medium: rgba(30, 30, 30, 0.75);
+
+     --color-bg-main-hover: #c3f1f1;
+
+    --transition-duration:0.2s;
+
+    @include laptop{
+        --container-width:#{rem(1280)};
+    }
+}

@@ -1,0 +1,41 @@
+@use '../helpers' as *;
+
+.about-us{
+    padding-bottom: fluid(165, 65);
+    
+
+    &__inner{
+        text-align: center;
+        display: grid;
+        gap: rem(48);
+
+    }
+
+    &__title{
+        display: grid;
+        gap: rem(12);
+    }
+
+    &__advantages{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(24);
+
+        @include mobile{
+            grid-template-columns: auto;
+        }
+    }
+    &__advantage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(12);
+
+        h3{
+            padding-top: rem(12);
+        }
+        p{
+            max-width: rem(400);
+        }
+    }
+}

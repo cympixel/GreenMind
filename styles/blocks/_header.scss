@@ -1,0 +1,193 @@
+@use '../helpers' as *;
+
+.header{
+    --header-space:#{rem(48)};
+
+    @include mobile{
+        --header-space:#{rem(30)};
+    }
+    
+    &__top{
+        padding-block: var(--header-space);
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left{
+            display: flex;
+            gap: var(--header-space);
+        }
+        
+        &-right{
+            display: flex;
+            gap: var(--header-space);
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: var(--header-space);
+
+        @include mobile{
+            display: none;
+        }
+    }
+    &__link{
+        font-size: rem(16);
+        
+            &:hover{
+                color: var(--color-accent);
+            }
+            &.is-active{
+               pointer-events: none;
+               color: var(--color-accent);
+            }
+    }
+    &__divider{
+        width: 1px;
+        background-color: var(--color-accent);
+
+        @include mobile-s{
+            display: none;
+        }
+    }
+
+    &__icon{
+        &--cart{
+            @include mobile-s{
+                display: none;
+            }
+        }
+        &--user{
+           @include mobile-s{
+                display: none;
+            }
+        }
+    }
+
+    &__body{
+        background-image: url(../../img/header/bg.png);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-color: var(--color-bg-main);
+        border-radius: rem(24);
+        
+        @include mobile{
+            background-image: none;
+        }
+
+        &-column{
+            padding: rem(48) rem(48) rem(125) rem(48);
+            display: grid;
+            gap: rem(24);
+
+            max-width: rem(550);
+            width: 100%;
+
+            @include mobile{
+                 padding: rem(24) rem(24) rem(60) rem(24);
+            }
+        }
+    }
+    &__stats{
+        display: flex;
+        gap: rem(48);
+        align-items: center;
+        color: var(--color-accent);
+        font-weight: 500;
+
+        @include mobile{
+            gap: rem(24);
+        }
+        span{
+            font-size: fluid(32, 20);
+            }
+        
+        &-divider{
+            width: rem(1);
+            height: rem(64);
+            background-color: var(--color-accent);
+
+            @include mobile-s{
+
+            }
+        }
+        
+    }
+    &__search{
+        margin-top: rem(24);
+        position: relative;
+        &-input{
+            padding: rem(18);
+            border: none;
+            border-radius: rem(12);
+            width: 100%;
+
+            &::placeholder{
+                font-size: rem(18);
+                color: var(--color-main);
+                
+                @include mobile{
+                    font-size: rem(14);
+                }
+            }
+        }
+        &-btn{
+            position: absolute;
+            right: rem(8);
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: rem(48);
+            height: rem(48);
+            border: none;
+            border-radius: rem(12);
+            background-color: var(--color-bg-main);
+            background-image:url(../../img/header/search.svg) ;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:hover{
+                background-color: var(--color-bg-main-hover);
+            }
+
+        }
+    }
+    
+    
+    
+    &__overlay{    
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 3rem;
+      padding: 1rem;
+      background-color: var(--color-bg-main);
+      transition-duration:var(--transition-duration);
+
+        &-list{
+            display: flex;
+            align-items: center;
+            gap: var(--header-space);
+            flex-direction: column;
+
+            .header__item:last-child{
+                display: flex;
+                gap: rem(20);
+
+            }
+      }
+    
+      &:not(.is-active) {
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateX(100%);
+      }
+    
+    }
+}

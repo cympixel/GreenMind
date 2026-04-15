@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMind</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header" >
+        <div class="header__inner container">
+            <div class="header__top">
+                <div class="header__top-left">
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.svg" alt="GreenMind">
+                    </a>
+                    <nav class="header__nav" >
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link is-active">Home</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Products</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                 <div class="header__top-right">
+                    <a href="#" class="header__icon header__icon--cart">
+                        <img src="./img/header/icon-cart.svg" alt="Cart">
+                    </a>
+                    <a href="#" class="header__icon header__icon--user">
+                        <img src="./img/header/icon-person.svg" alt="User">
+                    </a>
+                    <span class="header__divider"></span>
+                    <button
+                        class="burger-button"
+                        type="button"
+                        aria-label="Open menu"
+                        title="Open menu"
+                        data-js-header-burger-button
+                    >
+                        <span class="burger-button__line"></span>
+                        <span class="burger-button__line"></span>
+                        <span class="burger-button__line"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="header__body-column">
+                    <h1>Buy your dream plants</h1>
+                    <div class="header__stats">
+                        <div class="header__stats-plants">
+                            <span>50+</span> <br>
+                            Plant Species
+                        </div>
+                        <div class="header__stats-divider"></div>
+                        <div class="header__stats-customers">
+                            <span>100+</span> <br>
+                            Customers
+                        </div>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__search-input" type="text" placeholder="What are you looking for?">
+                        <button class="header__search-btn">
+                            <img src="./img/header/" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__overlay" data-js-header-overlay>
+            <ul class="header__overlay-list" >
+                            <li class="header__item">
+                                <a href="#" class="header__link is-active">Home</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Products</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Contacts</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__icon header__icon--cart">
+                                <img src="./img/header/icon-cart.svg" alt="Cart">
+                                </a>
+                                <a href="#" class="header__icon header__icon--user">
+                                    <img src="./img/header/icon-person.svg" alt="User">
+                                </a>
+                            </li>
+                            
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="bestseller">
+            <div class="bestseller__inner container">
+                <div class="bestseller__info">
+                    <h2>Best Selling Plants</h2>
+                    <p>Easiest way to healthy life by buying your favorite plants </p>
+                    <a href="#" class="bestseller__info-btn">
+                        See more
+                        <img src="./img/ArrowRight.svg" alt="">
+                    </a>
+                </div>
+                <div class="bestseller__cards">
+                    <div class="bestseller__card">
+                        <img src="./img/bestseller/1.jpg" alt="">
+                        <div class="bestseller__card-info">
+                            <span class="bestseller__card-name">Natural Plants</span>
+                            <span class="bestseller__card-price">₱ 1,400.00</span>
+
+                        </div>
+                    </div>
+                    <div class="bestseller__card">
+                        <img src="./img/bestseller/2.jpg" alt="">
+                        <div class="bestseller__card-info"> 
+                            <span class="bestseller__card-name">Artificial Plants</span>
+                            <span class="bestseller__card-price">₱ 900.00</span>
+                        </div>
+                    </div>
+                    <div class="bestseller__card">
+                        <img src="./img/bestseller/3.jpg" alt="">
+                        <div class="bestseller__card-info">
+                            <span class="bestseller__card-name">Artificial Plants</span>
+                            <span class="bestseller__card-price">₱ 3,500.00</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="about-us__inner container">
+                <div class="about-us__title">
+                    <h2>About us</h2>
+                    <p>Order now and appreciate the beauty of nature</p>
+                </div>
+                <div class="about-us__advantages">
+                    <div class="about-us__advantage">
+                        <img src="./img/about-us/1.svg" alt="">
+                        <h3>Large Assortment</h3>
+                        <p>we offer many different types of products with fewer variations in each category.</p>
+                    </div>
+                    <div class="about-us__advantage">
+                        <img src="./img/about-us/2.svg" alt="">
+                        <h3>Fast & Free Shipping</h3>
+                        <p>4-day or less delivery time, free shipping and an expedited delivery option.</p>
+                    </div>
+                    <div class="about-us__advantage">
+                        <img src="./img/about-us/3.svg" alt="">
+                        <h3>24/7 Support</h3>
+                        <p>answers to any business related inquiry 24/7 and in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="categories__inner">
+                <div class="categories__title container">
+                    <h2>Categories</h2>
+                    <p>Find what you are looking for</p>
+                </div>
+                <div class="categories__sections">
+                    <div class="categories__sections-inner container">
+                        <div class="categories__section">
+                            <img src="./img/category/1.jpg" alt="">
+                            <h3>Natural Plants</h3>
+                        <div class="categories__section-info">
+                            <p>Horem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="categories__btn">
+                                Explore
+                                <img src="./img/ArrowRight.svg" alt="">
+                            </a>
+                        </div>
+                        
+                        </div>
+                        <div class="categories__section categories__section--active">
+                            <img src="./img/category/2.jpg" alt="">
+                            <h3>Artificial Plants</h3>
+                           <div class="categories__section-info">
+                               <p>Horem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                               <a href="#" class="categories__btn">
+                                   Explore
+                                   <img src="./img/ArrowRight.svg" alt="">
+                               </a>
+                           </div>                      
+                        </div>
+                        <div class="categories__section">
+                            <img src="./img/category/3.jpg" alt="">
+                            <h3>Plant Accessories</h3>
+                         <div class="categories__section-info">
+                             <p>Horem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                             <a href="#" class="categories__btn">
+                                 Explore
+                                 <img src="./img/ArrowRight.svg" alt="">
+                             </a>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__inner ">
+                <div class="reviews__title container">
+                    <h2>
+                        What customers say about GREEMIND?
+                    </h2>
+                    <div class="swiper-pagination" data-js-slider-pagination=""></div>
+                </div>
+                <div class="reviews__slider" data-js-slider="">
+                    <div class="swiper" data-js-slider-swiper="">
+                        
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-card">
+                                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                    <div class="reviews__slider-card-bottom">
+                                        <div class="reviews__slider-card-person">
+                                            <img class="reviews__slider-card-img" src="./img/slider/1.png" alt="">
+                                            <div class="reviews__slider-card-name">
+                                                <h3>John Doe</h3>
+                                                <span>Youtuber</span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__slider-card-rating">
+                                            <img src="./img/slider/star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-card">
+                                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                    <div class="reviews__slider-card-bottom">
+                                        <div class="reviews__slider-card-person">
+                                            <img class="reviews__slider-card-img" src="./img/slider/2.png" alt="">
+                                            <div class="reviews__slider-card-name">
+                                                <h3>Lutia S</h3>
+                                                <span>Proffesor</span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__slider-card-rating">
+                                            <img src="./img/slider/star.svg" alt="">
+                                            <span>5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-card">
+                                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                    <div class="reviews__slider-card-bottom">
+                                        <div class="reviews__slider-card-person">
+                                            <img class="reviews__slider-card-img" src="./img/slider/1.png" alt="">
+                                            <div class="reviews__slider-card-name">
+                                                <h3>John Doe</h3>
+                                                <span>Youtuber</span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__slider-card-rating">
+                                            <img src="./img/slider/star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__slider-card">
+                                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                    <div class="reviews__slider-card-bottom">
+                                        <div class="reviews__slider-card-person">
+                                            <img class="reviews__slider-card-img" src="./img/slider/2.png" alt="">
+                                            <div class="reviews__slider-card-name">
+                                                <h3>Lutia S</h3>
+                                                <span>Proffesor</span>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__slider-card-rating">
+                                            <img src="./img/slider/star.svg" alt="">
+                                            <span>5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="./img/footer/logo-footer.svg" alt="GreenMind">
+                    <span class="footer__info">We help you find your dream plant</span>
+                    <div class="footer__soc1als">
+                        <a href="#" class="footer__soc1als-icon">
+                            <img src="./img/footer/1.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer__soc1als-icon">
+                            <img src="./img/footer/2.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="footer__soc1als-icon">
+                            <img src="./img/footer/3.svg" alt="Twitter">
+                        </a>                    
+                    </div>
+                </div>
+                <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <ul class="footer__menu-list">
+                                <h3>
+                                    Information
+                                </h3>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       About
+                                       
+                                    </a>
+                                </li>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Product
+                                        
+                                    </a>
+                                </li>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Blog
+                                       
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="footer__menu-item">
+                            <ul class="footer__menu-list">
+                                <h3>
+                                    Company
+                                </h3>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Community
+                                       
+                                    </a>
+                                </li>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                      Career
+                                        
+                                    </a>
+                                </li>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Our story
+                                       
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="footer__menu-item">
+                            <ul class="footer__menu-list">
+                                <h3>
+                                    Contact
+                                </h3>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Getting Started
+                                       
+                                    </a>
+                                </li>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Pricing
+                                        
+                                    </a>
+                                </li>
+                                <li class="footer__menu-list-item">
+                                    <a href="/">
+                                       Resources
+                                       
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        
+                </ul>   
+            </div>
+            <div class="footer__cpr">
+                <p>2023 all Right Reserved Term of use GREENMIND</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

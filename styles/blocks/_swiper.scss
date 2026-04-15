@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+.swiper-slide{
+    width: auto !important; 
+    @include tablet{
+        width: 100% !important;
+    }
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+   position: unset;
+   min-width: rem(104);
+   width: auto;
+}
+.swiper-pagination-bullet{
+    background-color: #D9D9D9;
+    transition-duration: var(--transition-duration);
+}
+.swiper-pagination-bullet-active{
+    width: rem(48);
+    border-radius: rem(12);
+    background-color: var(--color-bg-main);
+}
