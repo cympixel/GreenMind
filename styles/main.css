@@ -241,6 +241,10 @@ svg * {
   }
 }
 
+html.is-lock {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--font-family-base);
   color: var(--color-main);
@@ -349,7 +353,7 @@ h2 {
   }
 }
 .header__body {
-  background-image: url(../../img/header/bg.png);
+  background-image: image-set(url("../img/header/bg.webp") type('image/webp'), url("../img/header/bg.png") type('image/png'));
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-color: var(--color-bg-main);
@@ -421,7 +425,7 @@ h2 {
   border: none;
   border-radius: 0.75rem;
   background-color: var(--color-bg-main);
-  background-image: url(../../img/header/search.svg);
+  background-image: url(../img/header/search.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
