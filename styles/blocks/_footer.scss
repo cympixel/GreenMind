@@ -1,0 +1,71 @@
+@use '../helpers' as *;
+
+.footer{
+    background-color: var(--color-bg-main);
+
+    &__inner{
+        display: grid;
+        gap: rem(98);
+        padding-block: rem(48);
+
+        @include mobile{
+            gap: rem(44);
+            padding-block: rem(30);
+        }
+    }
+
+    &__top{
+        display: grid;
+        grid-template-columns: rem(192) auto;
+        gap: rem(24);
+
+        @include mobile{
+            grid-template-columns: auto;
+        }
+    }
+    &__logo{
+        display: grid;
+        gap: rem(24);
+
+        
+    }
+    &__soc1als{
+        display: grid;
+        grid-template-columns: repeat(3, rem(48));
+        gap: rem(24);
+
+        &-icon{
+            width: rem(48);
+            height: rem(48);
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-main);
+            border-radius: 50%;
+        }
+    }
+    &__menu{
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(48);
+
+
+        @include mobile{
+            justify-self: start;
+            gap: rem(24);
+        }
+        &-list{
+            display: grid;
+            gap: rem(24);
+            a{
+                text-decoration: none;
+
+                &:hover{
+                    color: #5a5858;
+                }
+            }
+        }
+    }
+}
