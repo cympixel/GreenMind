@@ -17,8 +17,8 @@ class Slider {
           slidesPerView:'auto', 
           spaceBetween: 48,
           centeredSlides: true,
-          observer: true,          // следить за самим swiper-контейнером
-          observeParents: true,    // следить за родителями контейнера
+          observer: true,          
+          observeParents: true,    
           observeSlideChildren: true, 
       
           
